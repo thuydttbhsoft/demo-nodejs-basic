@@ -1,10 +1,10 @@
 const request = require("supertest");
-const app = require("../../../index");
-const statusCode = require("../../utils/constants/statusCode");
+const app = require("../../index");
+const statusCode = require("../../src/utils/constants/statusCode");
 const mongoose = require("mongoose");
 // Import and mock the MongoDB operations
-const db = require("../../models/todo.model");
-jest.mock("../../models/todo.model");
+const db = require("../../src/models/todo.model");
+jest.mock("../../src/models/todo.model");
 beforeAll((done) => {
   done();
 });
